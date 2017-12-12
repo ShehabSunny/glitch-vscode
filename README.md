@@ -1,65 +1,54 @@
-# glitch README
+# Glitch
 
-This is the README for your extension "glitch". After writing up a brief description, we recommend including the following sections.
+This is an extension that enables glitch effect for vs code.
+
+##### SPECIAL NOTE: If Code complains about that it is corrupted, simply click “Don't show again”.
+
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+A glitch effect is enabled into all the texts shown in vs code.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Glitch effect](glitch.gif)
 
 ## Requirements
 
 If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
+## Extension commands
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+As you know to access the command palette and introduce commands you can use ***F1*** (all OS), ***Ctrl+Shift+P*** (Windows & Linux) or ***Cmd+Shift+P*** (OS X).
 
-For example:
+- ***Glitch (Enable)*** : It enables the glitch effect. 
+- ***Glitch (Disable)*** : It will disable glitch effect.
+Note: in both cases vs code needs to be reloaded.
 
-This extension contributes the following settings:
+## Windows users
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+**In Windows, make sure you run your VS Code in Administrator mode before enabling or disabling your custom style!**
 
-## Known Issues
+## Linux users
+**Linux also requires you to reclaim ownership of the vs code folders** 
+You can achieve this by executing this on your terminal (Ubuntu):
+```sh
+#for vs code:
+sudo chown -R $(whoami) /usr/share/code
+#for vs code insiders:
+sudo chown -R $(whoami) /usr/share/code-insiders
+#if you want to check your folder's owner:
+ls -la /usr/share/code
+#if you want to rollback this permissions back to root:
+sudo chown -R root /usr/share/code
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+# Disclaimer
+This extension modifies some VS Code files so use it at your own risk.
+Currently, custom CSS is not supported by the extension functionality that VS Code provides so this extension solves this issue by injecting code into:
 
-## Release Notes
+- `electron-browser/index.html`.
 
-Users appreciate release notes as you update your extension.
+The extension will restore back to original file when disable command is executed. 
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+As this extension modifies VS Code files it will get disabled with every VS Code update. You will have to enable via command palette.
 
 **Enjoy!**
