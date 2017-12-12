@@ -1,0 +1,22 @@
+{
+  "name": "glitch",
+  "version": "0.1.0",
+  "description": "A vs-code extension that enables glitch effect.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShehabSunny/glitch-vscode.git"
+  },
+  "keywords": [
+    "vscode"
+  ],
+  "author": "Shehabul Hossain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShehabSunny/glitch-vscode/issues"
+  },
+  "homepage": "https://github.com/ShehabSunny/glitch-vscode#readme"
+}
