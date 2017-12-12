@@ -9,7 +9,7 @@ This is an extension that enables glitch effect for vs code.
 
 A glitch effect is enabled into all the texts shown in vs code.
 
-![Glitch effect](https://github.com/ShehabSunny/glitch-vscode/blob/master/glitch.gif)
+![Glitch effect](glitch.gif)
 
 ## Requirements
 
