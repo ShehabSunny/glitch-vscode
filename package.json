@@ -8,7 +8,8 @@
 		"email": "hello@sunny.im",
 		"name": "Shehabul Hossain",
 		"url": "www.sunny.im"
-	},
+    },
+    "repository": "https://github.com/ShehabSunny/glitch-vscode",
     "engines": {
         "vscode": "^1.16.0"
     },
