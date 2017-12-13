@@ -60,11 +60,12 @@ function activate(context) {
 			// restore html to load css 
 			var html = fs.readFileSync(htmlFile, 'utf-8');
 			html = html.replace(/<!-- !! VSCODE-CUSTOM-CSS-START !! -->[\s\S]*?<!-- !! VSCODE-CUSTOM-CSS-END !! -->/, '');
+			html = html.replace(/<body class="glitch /, '<body class="');
 			fs.writeFileSync(htmlFile, html, 'utf-8');
 
 			// restore preload file
 			var preload = fs.readFileSync(preloadFile, 'utf-8');
-			preload = preload.replace(/c.body.className="glitch glitch/, 'c.body.className="');
+			preload = preload.replace(/c.body.className="glitch /, 'c.body.className="');
 			fs.writeFileSync(preloadFile, preload, 'utf-8');
 			enabledRestart();
 
