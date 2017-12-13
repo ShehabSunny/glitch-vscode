@@ -12,6 +12,9 @@ A glitch effect is enabled into all the texts shown in vs code.
 ![Glitch effect](glitch-compressed.gif)
 
 
+## Installation
+Install this extension by visiting VS Code marketplace [here](https://marketplace.visualstudio.com/items?itemName=shehabulsunny.glitch) or by searching 'glitch' in VS Code extensions. 
+
 ## Extension commands
 
 As you know to access the command palette and introduce commands you can use ***F1*** (all OS), ***Ctrl+Shift+P*** (Windows & Linux) or ***Cmd+Shift+P*** (OS X).
