@@ -11,9 +11,6 @@ A glitch effect is enabled into all the texts shown in vs code.
 
 ![Glitch effect](glitch-compressed.gif)
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension commands
 
